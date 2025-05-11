@@ -28,6 +28,9 @@ async def get_meta_item(stremio_id: str):
         "type": "tv",
         "name": channel_data["name"],
         "poster": channel_data["icon"],
+        "background": channel_data["icon"],
+        "posterShape": "square",
+        "logo": channel_data["icon"],
         "description": f"Regarder {channel_data['name']} en direct (Catégorie: {channel_data['group']})."
     }
     logging.debug(f"Méta-données TV générées pour {stremio_id}: {meta_object}")

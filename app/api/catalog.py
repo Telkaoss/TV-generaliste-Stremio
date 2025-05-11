@@ -24,6 +24,9 @@ async def get_catalog(category_id: str):
                     "type": "tv",
                     "name": channel['name'],
                     "poster": channel['icon'],
+                    "background": channel['icon'],
+                    "posterShape": "square",
+                    "logo": channel['icon'],
                     "description": f"Regarder {channel['name']} en direct (Catégorie: {category})."
                 })
             
