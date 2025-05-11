@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  generaliste_tv_addon:
+    build: .
+    container_name: generaliste-tv-addon-stremio
+    ports:
+      - "7000:7000" # Mappe le port 7000 du conteneur au port 7000 de l'hôte
+    restart: unless-stopped
+    environment:
+      - STREMIO_BASE_URL=https://votre-domaine.com # À configurer avec votre propre domaine
+    # Optionnel: si vous avez des fichiers de configuration ou des données à monter
+    # volumes:
+    #   - ./config:/app/config # Exemple
