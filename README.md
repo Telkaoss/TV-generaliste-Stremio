@@ -4,7 +4,7 @@ Un addon Stremio qui permet de regarder des chaînes TV françaises en direct.
 
 ## Fonctionnalités
 
-- Accès aux chaînes TV françaises en streaming
+- Accès aux chaînes TV en streaming via à https://github.com/ipstreet312/freeiptv/blob/master/all.m3u
 - Interface simple et intuitive
 - Mises à jour automatiques de la liste des chaînes
 - Installation facile via le lien Stremio
